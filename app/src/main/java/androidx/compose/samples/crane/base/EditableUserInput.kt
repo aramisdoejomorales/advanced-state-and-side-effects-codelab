@@ -34,10 +34,6 @@ import androidx.compose.ui.graphics.SolidColor
 class EditableUserInputState(private val hint: String, initialText: String) {
     private var text: String by mutableStateOf(initialText)
 
-    /*fun updateText(newText: String) {
-        text = newText
-    }*/
-
     val isHint: Boolean
         get() = text == hint
 
@@ -63,6 +59,7 @@ fun rememberEditableUserInput(hint: String): EditableUserInputState =
         )
     }
 
+// Continuar en: ¿Cómo usar el contenedor de estado?
 @Composable
 fun CraneEditableUserInput(
     hint: String,
